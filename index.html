@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=main, initial-scale=1.0">
+        <!-- daisy --> 
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- spinner -->
+        <link rel="stylesheet" media="all" href="/resource/css/ispinner.prefixed.css">
+
+        <style>
+            .noto-sans{
+            font-family: "Noto Sans", sans-serif; }
+        </style>
+
+    <title>Art Work</title>
+</head>
+<body class="noto-sans">
+    <main class="w-11/12 mx-auto">
+        <header>
+            <div class="flex justify-center items-center p-4">
+                <h1 class=" pt-4 text-center text-4xl bg-amber-800 inline-block items-center p-2 rounded-md">
+                    Art 
+                    <span class="italic underline text-indigo-400"> of</span>
+                    Works</h1>
+            </div>
+               
+            <nav class="mt-6 lg:flex justify-between space-y-4 text-center bg-slate-600">
+              <h4 class="text-2xl border inline-block bg-amber-700 text-white p-2 rounded-lg">
+                <span class="text-6xl text-slate-600 font-semibold">i</span><span class="text-gray-300 italic">magine with art</span></h4>
+                <div class="p-4">
+                    <ul class="flex gap-4 text-white">
+                        <li>Home</li>
+                        <li>Service</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <body class="noto-sans">
+                <!-- <h1 class="text-center text-4xl">Art Design</h1> -->
+                <!-- search -->
+               <div class="flex justify-center mt-6">
+                <div class="w-1/3">
+                    <label class="input input-bordered flex items-center gap-2">
+                    <input id="input-search" type="text" class="grow" placeholder="Search..." />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                        fill-rule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </label>
+                </div>
+                <button id="btn-search" onclick="heandleSearch()" class="btn btn-active btn-ghost">Search</button>
+               </div>
+
+
+                <div id="spinner-id"class="flex justify-center items-center mt-6 hidden">
+                    <div class="ispinner ispinner-large">
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                        <div class="ispinner-blade"></div>
+                    </div>
+                </div>
+            <!-- btn Show ALL -->
+             <div class="text-center mt-4">
+                <button onclick ="handleShowAll()" class="btn  bg-blue-900">
+                    Show All
+                </button>
+             </div>
+
+
+
+            <!-- js -->
+            <script src="/resource/js/index.js"></script>
+        </body>
+        <footer>
+
+        </footer>
+    </main>
+</body>
+</html>
